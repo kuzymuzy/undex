@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юндекс — к сожалению страница которую вы ищите не существует</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/img/logo.png" type="image/x-icon">
+    <link href="https://yastatic.net/s3/frontend-fonts/YaDisplay/YandexSansDisplay-Bold.woff2" rel="woff2">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-toutch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Юндекс — быстрый поиск в интернете">
+    <meta name="keywords" content=">Юндекс">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+
+    <div class="top-left-logo">
+        <a title="Юндекс — быстрый поиск в интернете" href="https://undex.kuzymuzy.ru">
+            <img src="/assets/img/logo.png" class="logo-img">
+        </a>
+    </div>
+
+
+    <div class="logo-text">
+        <a title="Юндекс — быстрый поиск в интернете">
+            <span class="red-letter">Ю</span>ндекс 404
+        </a>
+        <p style="font-size: 30px">К сожалению страница которую вы ищите не существует</p>
+    </div>
+
+    <select style="display:none" id="engine">
+        <option value="Undex">Undex</option>
+    </select>
+
+    <div class="search-container">
+        <form onsubmit="return urlsearch(event);">
+            <input type="text" class="search-input" name="q" id="search-query" placeholder="потеряем все!">
+            <button type="submit" class="search-button">Найти</button>
+        </form>
+    </div>
+    
+<!--
+    <div class="yandex-ad" id="yandexAd">
+        <div class="ad-header">
+            <span class="ad-label">Реклама</span>
+            <button class="ad-close-btn" aria-label="Закрыть рекламу" onclick="document.getElementById('yandexAd').style.display='none'">×</button>
+        </div>
+        <a href="https://kuzymuzy.ru/KuzyCoin/login" target="_blank">
+            <img src="https://kuzymuzy.ru/favicon.ico" alt="Реклама" class="ad-img">
+            <div class="ad-text">
+                <strong>KuzyCoin</strong><br>
+                Игра как в хомяка но лучше, тут тебя 100% наебут.
+            </div>
+        </a>
+    </div>
+-->
+
+<script src="script.js"></script>
+<script src="ukraine.js"></script>
+
+</body>
+</html>
