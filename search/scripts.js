@@ -52,6 +52,7 @@ function renderesult(){
                 container.appendChild(img1);
             }
             else if (searchpage === "#images"){
+                document.title = `${q} - Юндекс: нашлось ${count}`;
                 result.textContent = `Картинки по запросу: ${q}`;
                 const img1 = document.createElement("img");
                 img1.src = "/assets/img/AmityBlight.png";
@@ -76,6 +77,7 @@ function renderesult(){
                 container.appendChild(img2);
             }
             else if (searchpage === "#images"){
+                document.title = `${q} - Юндекс: нашлось ${count}`;
                 result.textContent = `Картинки по запросу: ${q}`;
                 const img1 = document.createElement("img");
                 img1.src = "/assets/img/AmityBlight.png";
@@ -92,7 +94,8 @@ function renderesult(){
         }
         else if (checkWebsite(q) === "no-protocol" || checkWebsite(q) === "https" || checkWebsite(q) === "http"){
             if (searchpage === "#search") {
-                result.textContent = "Ух ебать, мы нашли этот сайт"
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = "Удивительно, но мы смогли найти что-то"
                 google.style.display = "block";
                 sitedomain.textContent = fulldomain
                 fetch(`https://api.microlink.io/?url=https://${fulldomain}`)
