@@ -95,13 +95,18 @@ function renderesult(){
                 result.textContent = "Ух ебать, мы нашли этот сайт"
                 google.style.display = "block";
                 sitedomain.textContent = fulldomain
-                sitedescription.textContent = "Ну тут сайт объективно говно, зачем тебе сюда заходить?"
-                if (subdomain){
-                    googlelink.textContent = subdomain;
-                } else{
-                    googlelink.textContent = domain;
-                }     
-                siteicon.src = `https://${fulldomain}/favicon.ico`;
+                fetch(`https://api.microlink.io/?url=https://${fulldomain}`)
+                    .then(response => response.json())
+                    .then(data => { 
+                        if (data.data.description){
+                            sitedescription.textContent = data.data.description;
+                        }
+                        else {
+                            sitedescription.textContent = "Тут сайт на столько говно, что даже описание не подгрузило";
+                        }
+                        googlelink.textContent = data.data.title;
+                        siteicon.src = data.data.logo.url;
+                    })    
                 googlelink.href = `https://${fulldomain}`; 
             }
             else {
@@ -112,6 +117,10 @@ function renderesult(){
         else {
             if (searchpage === "#search") {
                 result.textContent = "По вашему запросу ничего не найдено попробуйте поиск наших конкурентов: "
+                googlelink.textContent = "Google";
+                sitedomain.textContent = "google.com";
+                siteicon.src = "/assets/img/google.png";
+                sitedescription.textContent = "Поиск информации в интернете: веб страницы, картинки, видео и многое другое.";
                 google.style.display = "block";
                 googlelink.href = `https://www.google.com/search?q=${encodeURIComponent(q)}`;
             }
