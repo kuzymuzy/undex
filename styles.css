@@ -118,7 +118,7 @@ select {
     transform: scale(1.05);
 }
 
-.yandex-ad {
+.uandex-ad {
     position: static;
     margin-top: 10px;
     background-color: #fff;
@@ -165,7 +165,7 @@ select {
     background-color: #2563eb; 
 }
 
-.yandex-ad a {
+.uandex-ad a {
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -203,7 +203,7 @@ select {
         transition: all 0.3s ease;
     }
 
-    .yandex-ad {
+    .uandex-ad {
         position: static;
         margin: 10px auto;
         max-width: 90%;

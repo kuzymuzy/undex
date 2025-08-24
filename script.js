@@ -1,4 +1,6 @@
-const engine = document.getElementById("engine")
+const engine = document.getElementById("engine");
+const urlParams = new URLSearchParams(window.location.search);
+const s = urlParams.get('s');
 
 function urlsearch(event) {
     event.preventDefault();
@@ -9,6 +11,22 @@ function urlsearch(event) {
     else {
         searchtext(event);
     }
+}
+
+if (s === "Google") {
+    engine.value = "Google";
+}
+if (s === "Undex") {
+    engine.value = "Undex";
+}
+if (s === "Yandex") {
+    engine.value = "Yandex";
+}
+if (s === "DuckDuckGo") {
+    engine.value = "DuckDuckGo";
+}
+if (s === "Bing") {
+    engine.value = "Bing";
 }
 
 function searchtext(event) {
@@ -38,16 +56,4 @@ function searchtext(event) {
         let searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
         window.location.href = searchUrl;
     }
-    if (engine.value === "All") {
-        let searchUrlGoogle = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-        let searchUrlUndex = `/search/?q=${encodeURIComponent(query)}`;
-        let searchUrlYa = `https://ya.ru/search/?text=${encodeURIComponent(query)}`;
-        let searchUrlDuck = `https://duckduckgo.com/?t=h_&q=${encodeURIComponent(query)}`;
-        let searchUrlBing = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-        window.open(searchUrlGoogle, "_blank");
-        window.open(searchUrlUndex, "_blank");
-        window.open(searchUrlYa, "_blank");
-        window.open(searchUrlDuck, "_blank");
-        window.open(searchUrlBing, "_blank");
-    }   
 }
