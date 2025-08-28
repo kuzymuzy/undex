@@ -8,6 +8,7 @@ let siteicon = document.getElementById("site-icon");
 const google = document.getElementById("google");
 const container = document.getElementById("amity-container");
 const urlParams = new URLSearchParams(window.location.search);
+let previousElement = null;
 let searchpage = window.location.hash;
 let protocol = "";
 let fulldomain = "";
@@ -37,6 +38,15 @@ function checkWebsite(str) {
  
 function renderesult(){
     searchpage = window.location.hash
+    if (previousElement) {
+        previousElement.style.backgroundColor = "";
+    }
+    const currentId = window.location.hash.substring(1);
+    const currentElement = document.getElementById(currentId);
+    if (currentElement) {
+        currentElement.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+        previousElement = currentElement;
+    }
     container.innerHTML = "";
     if (q === null || q ===""){
         window.location.href = "/"
