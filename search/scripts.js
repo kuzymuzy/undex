@@ -1,4 +1,4 @@
-const count = 1;
+let count = 1;
 const result = document.getElementById("result");
 const searchquery = document.getElementById("search-query");
 const googlelink = document.getElementById("googlelink");
@@ -101,6 +101,12 @@ function renderesult(){
             else {
                 result.textContent = "К сожалению тут пока ничего нет :("
             }
+        }
+        else if (q.toLowerCase() === "the biggest mistake in life" || q.toLowerCase() === "самая большая ошибка в жизни"){
+            count = 666;
+            document.title = `${q} - Юндекс: нашлось ${count}`;
+            result.textContent = "Доверять людям, точнее сближаться с ними, я знаю что нельзя, но я повторяю эту ошибку постоянно"
+            google.style.display = "none";
         }
         else if (checkWebsite(q) === "no-protocol" || checkWebsite(q) === "https" || checkWebsite(q) === "http"){
             if (searchpage === "#search") {
