@@ -173,6 +173,13 @@ function renderesult(){
             result.textContent = "Доверять людям, точнее сближаться с ними, я знаю что нельзя, но я повторяю эту ошибку постоянно"
             google.style.display = "none";
         }
+        else if (q.toLowerCase() === "motto for life" || q.toLowerCase() === "девиз по жизни"){
+            count = 777;
+            document.title = `${q} - Юндекс: нашлось ${count}`;
+            result.textContent = "Мужчина царь каблук его корона \n\n Каблук но зато какой туфельки"
+            result.style.whiteSpace = "pre-line";
+            google.style.display = "none";
+        }
         else if (checkWebsite(q) === "no-protocol" || checkWebsite(q) === "https" || checkWebsite(q) === "http"){
             if (searchpage === "#search") {
                 document.title = `${q} - Юндекс: нашлось ${count}`;
