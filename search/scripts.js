@@ -102,6 +102,71 @@ function renderesult(){
                 result.textContent = "К сожалению тут пока ничего нет :("
             }
         }
+        else if (q.toLowerCase() === "рататуй"){
+            if (searchpage === "#search") {
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = "Возможно вы имели в виду: Крыса Реми \n Крыса по имени Реми — талантливый повар, мечтающий готовить изысканные блюда, несмотря на то, что он крыса."
+                result.style.whiteSpace = "pre-line";
+                const img1 = document.createElement("img");
+                img1.src = "/assets/img/Рататуй_2.png";
+                img1.alt = "Рими";
+                const img2 = document.createElement("img");
+                img2.src = "/assets/img/Рататуй.png";
+                img2.alt = "Рими";
+                container.appendChild(img1);
+                container.appendChild(img2);
+            }
+            else if (searchpage === "#images"){
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = `Картинки по запросу: ${q}`;
+                const img1 = document.createElement("img");
+                img1.src = "/assets/img/Рататуй_2.png";
+                img1.alt = "Рими";
+                const img2 = document.createElement("img");
+                img2.src = "/assets/img/Рататуй.png";
+                img2.alt = "Рими";
+                container.appendChild(img1);
+                container.appendChild(img2);
+            }
+            else {
+                result.textContent = "К сожалению тут пока ничего нет :("
+            }
+        }
+        else if (  q.toLowerCase() === "алексей" || q.toLowerCase() === "леша" || q.toLowerCase() === "лёша" || q.toLowerCase() === "лешка" || q.toLowerCase() === "лёшка" || q.toLowerCase() === "алеша" || q.toLowerCase() === "алёша" || q.toLowerCase() === "алешка" || q.toLowerCase() === "алёшка"){
+            if (searchpage === "#search") {
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = "Возможно вы имели в виду: Рататуй \n\n Алексей — часто мягкий, ленивый, нерешительный, иногда хитрит и лицемерит, легко загнать под каблук."
+                result.style.whiteSpace = "pre-line";
+            }
+            else if (searchpage === "#images"){
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = `Картинки по запросу: ${q}`;
+                const img1 = document.createElement("img");
+                img1.src = "/assets/img/Рататуй_2.png";
+                img1.alt = "Рими";
+                const img2 = document.createElement("img");
+                img2.src = "/assets/img/Рататуй.png";
+                img2.alt = "Рими";
+                container.appendChild(img1);
+                container.appendChild(img2);
+            }
+            else if (searchpage === "#videos"){
+                document.title = `${q} - Юндекс: нашлось ${count}`;
+                result.textContent = `Видео по запросу: ${q}`;
+                const videocontainer = document.createElement("iframe");
+                videocontainer.src = "https://vk.com/video_ext.php?oid=-155284657&id=456241496&hd=2&autoplay=1";
+                videocontainer.width="853";
+                videocontainer.height="480";
+                videocontainer.style.backgroundColor = "#000";
+                videocontainer.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;";
+                videocontainer.allowFullscreen = true;
+                videocontainer.frameBorder = "0";
+                container.appendChild(videocontainer);
+            }
+            else {
+                result.textContent = "К сожалению тут пока ничего нет :("
+            }
+        }
         else if (q.toLowerCase() === "the biggest mistake in life" || q.toLowerCase() === "самая большая ошибка в жизни"){
             count = 666;
             document.title = `${q} - Юндекс: нашлось ${count}`;
