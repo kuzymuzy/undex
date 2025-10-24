@@ -180,6 +180,13 @@ function renderesult(){
             result.style.whiteSpace = "pre-line";
             google.style.display = "none";
         }
+        else if (q.toLowerCase() === "порно" || q.toLowerCase() === "porno"){
+            count = -10;
+            document.title = `${q} - Юндекс: нашлось ${count}`;
+            result.textContent = "Что это такое? Ну так давай ручки от письки убрал."
+            result.style.whiteSpace = "pre-line";
+            google.style.display = "none";
+        }
         else if (checkWebsite(q) === "no-protocol" || checkWebsite(q) === "https" || checkWebsite(q) === "http"){
             if (searchpage === "#search") {
                 document.title = `${q} - Юндекс: нашлось ${count}`;
