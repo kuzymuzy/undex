@@ -1,0 +1,130 @@
+{
+  "the cutest witch ever": {
+    "aliases": ["самая милая ведьма на свете"],
+    "search": {
+      "count": 1,
+      "text": "Конечно же Эмити Блайт!",
+      "images": ["/assets/img/AmityBlight.png"]
+    },
+    "images": {
+      "count": 1,
+      "images": ["/assets/img/AmityBlight.png"]
+    }
+  },
+
+  "amity blight": {
+    "aliases": ["эмити блайт"],
+    "search": {
+      "count": 1,
+      "text": "Самая очаровательная, милая, красивая, добрая ведьма во всем мире.",
+      "images": [
+        "/assets/img/AmityBlight.png",
+        "/assets/img/AmityBlight2.png"
+      ]
+    },
+    "images": {
+      "count": 1,
+      "images": [
+        "/assets/img/AmityBlight.png",
+        "/assets/img/AmityBlight2.png"
+      ]
+    }
+  },
+
+  "рататуй": {
+    "search": {
+      "count": 1,
+      "text": "Возможно вы имели в виду: Крыса Реми \n Крыса по имени Реми — талантливый повар, мечтающий готовить изысканные блюда, несмотря на то, что он крыса.",
+      "images": [
+        "/assets/img/Рататуй_2.png",
+        "/assets/img/Рататуй.png"
+      ]
+    },
+    "images": {
+      "count": 1,
+      "images": [
+        "/assets/img/Рататуй_2.png",
+        "/assets/img/Рататуй.png"
+      ]
+    }
+  },
+
+  "алексей": {
+    "aliases": ["лёша", "лешка", "лёшка", "алеша", "алёша", "алешка", "алёшка", "леша"],
+    "search": {
+      "count": 1,
+      "text": "Возможно вы имели в виду: Рататуй\n\nАлексей — часто мягкий, ленивый, нерешительный, иногда хитрит и лицемерит, легко загнать под каблук.",
+      "whiteSpace": "pre-line"
+    },
+    "images": {
+      "images": [
+        "/assets/img/Рататуй_2.png",
+        "/assets/img/Рататуй.png"
+      ]
+    },
+    "translate": {
+        "text": "Синебот"
+    },
+    "videos": {
+      "video": "https://vk.com/video_ext.php?oid=-155284657&id=456241496&hd=2&autoplay=1"
+    },
+    "music": {
+        "music": "https://music.yandex.ru/iframe/album/5454403/track/41571386"
+    }
+  },
+
+  "the biggest mistake in life": {
+    "aliases": ["самая большая ошибка в жизни"],
+    "search": {
+      "count": 666,
+      "text": "Доверять людям...",
+      "hideGoogle": true
+    }
+  },
+
+  "motto for life": {
+    "aliases": ["девиз по жизни"],
+    "search": {
+      "count": 777,
+      "text": "Мужчина царь каблук его корона\n\nКаблук но зато какой туфельки",
+      "whiteSpace": "pre-line",
+      "hideGoogle": true
+    }
+  },
+
+  "порно": {
+    "aliases": ["porno"],
+    "search": {
+      "count": -10,
+      "text": "Что это такое? Ну так давай ручки от письки убрал.",
+      "whiteSpace": "pre-line",
+      "hideGoogle": true
+    }
+  },
+
+  "иванов": {
+    "search": {
+      "count": 1,
+      "text": "Эта легенда переебала весь детский садик 'клубничка'"
+    },
+    "images": {
+        "text": "Представьте тут фотку педофила"
+    }
+  },
+
+  "коновалов": {
+    "search": {
+      "count": 1,
+      "text": "Этот просто хуесос, хули про него говорить...\n(по не совсем провереным данным не мытое чудовище как и матвеев)",
+      "whiteSpace": "pre-line"
+    }
+  },
+  
+  "матвеев": {
+    "search": {
+      "count": 1,
+      "text": "Не мытое чудовище, от него даже родители отказались.\n А когда он пишет маме, она отвечат '7500 час.'",
+      "whiteSpace": "pre-line"
+    }
+  }
+}
